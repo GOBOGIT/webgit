@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shot on GOBO</title>
+    <link>http://gobo.tv/tags/shot/</link>
+    <description>Recent content in Shot on GOBO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sat, 13 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://gobo.tv/tags/shot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>shot II</title>
+      <link>http://gobo.tv/blog/2017-05-13-shot-2/</link>
+      <pubDate>Sat, 13 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-05-13-shot-2/</guid>
+      <description>&lt;p&gt;Serie de videos proyectados en el FMX 2017 sobre Houdini: Motion Graphics, Generative Art&amp;hellip; muy interesantes! .&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.sidefx.com/community/fmx-2017-presentations/&#34;&gt;enlace: FMX 2017 Presentations Sidefx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>shot I</title>
+      <link>http://gobo.tv/blog/2017-04-10-shot-i/</link>
+      <pubDate>Mon, 10 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-04-10-shot-i/</guid>
+      <description>&lt;p&gt;🎧 El cantautor de moda de Marvel, Jim Croce: I got a name.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;spotify:track:2S0curmaVnRDRA4IBjigDb&#34;&gt;enlace: spotify&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
