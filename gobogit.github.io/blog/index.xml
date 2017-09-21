@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on GOBO</title>
+    <link>http://gobo.tv/blog/</link>
+    <description>Recent content in Blogs on GOBO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Mon, 18 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://gobo.tv/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Houdini Displacements</title>
+      <link>http://gobo.tv/blog/2017-09-19-houdini-displacements/</link>
+      <pubDate>Mon, 18 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-09-19-houdini-displacements/</guid>
+      <description>&lt;p&gt;Hola de nuevo! Éste post es un resumen de una semana en la que en tiempos libres he re-visitado las posibilidades de modificación de la geometría mediante texturas a través de la herramienta Displacement.&lt;/p&gt;
+
+&lt;p&gt;En  nuestro caso no vamos a utilizar en los ejemplos archivos de imágenes, sino nodos tipo noise, los cuales mezclaremos y modificaremos para conseguir patrones y tipos de desplazamiento diferentes.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blackmagic Fusion 9 - VR</title>
+      <link>http://gobo.tv/blog/2017-09-11-fusionvr/</link>
+      <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-09-11-fusionvr/</guid>
+      <description>&lt;p&gt;Si hace unos posts hablábamos sobre los programas que nos permitían editar material grabado en 360º y generar contenido en formato VR, hoy estamos de enhorabuena, porque la última versión de Blackmagic Fusion introduce nuevas herramientas para componer y crear este tipo de material.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Semana 34 &#39;17</title>
+      <link>http://gobo.tv/blog/2017-08-24-semana34/</link>
+      <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-08-24-semana34/</guid>
+      <description>&lt;h3 id=&#34;touchdesigner&#34;&gt;Touchdesigner&lt;/h3&gt;
+
+&lt;p&gt;&lt;br&gt;
+Una parte fundadamental en el aprendizaje de un nuevo software es el soporte en forma de ayuda o tutoriales del propio desarrollador, pero tan importante como la documentación es el trabajo de personas que desinteresadamente ofrecen sus conocimientos a través de tutoriales y foros.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rediseño de la web</title>
+      <link>http://gobo.tv/blog/2017-08-12-redweb/</link>
+      <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-08-12-redweb/</guid>
+      <description>&lt;p&gt;He aprovechado el parón vacacional para &lt;em&gt;reinventar&lt;/em&gt; la web, dando más protagonismo al blog, al cual espero ir añadiendo más contenidos. Ahora la web tiene un diseño más moderno, con un estilo de visualización que se ajusta mejor a las diferentes resoluciones de las pantallas.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Programación visual para artistas III. vvvv</title>
+      <link>http://gobo.tv/blog/2017-06-06-vvvv.1/</link>
+      <pubDate>Tue, 06 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-06-06-vvvv.1/</guid>
+      <description>&lt;p&gt;Por último, en ésta serie hablaremos de vvvv, un software de creación de contenido audiovisual mediante nodos, tal y como trabajamos en Max y Touchdesigner. Cuando utilizamos la programación a través de objetos como nodos vvvv lo define como &lt;mark&gt;&amp;ldquo;patching&amp;rdquo;&lt;/mark&gt;: uniendo diferentes nodos mediante sus entradas y salidas creamos una pieza de código ejecutable.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>shot II</title>
+      <link>http://gobo.tv/blog/2017-05-13-shot-2/</link>
+      <pubDate>Sat, 13 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-05-13-shot-2/</guid>
+      <description>&lt;p&gt;Serie de videos proyectados en el FMX 2017 sobre Houdini: Motion Graphics, Generative Art&amp;hellip; muy interesantes! .&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.sidefx.com/community/fmx-2017-presentations/&#34;&gt;enlace: FMX 2017 Presentations Sidefx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Programación visual para artistas II. TouchDesigner</title>
+      <link>http://gobo.tv/blog/2017-05-12-touchdesigner/</link>
+      <pubDate>Fri, 12 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-05-12-touchdesigner/</guid>
+      <description>&lt;p&gt;Si el mes pasado hablábamos de Max/msp, del que a parte de su módulo Jitter para generación de vídeo en tiempo real destacábamos las herramientas de audio, hoy hablamos de Derivative TouchDesigner, un software que se centra más en la parte de la imagen, manipulación de objetos 3D y con herramientas para la &lt;strong&gt;creación de interfaces&lt;/strong&gt; más sólidas, sin dejar atrás las características de entrada y salida analógica y digital y procesamiento de datos desde prácticamente cualquier fuente.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Programación visual para artistas I. Max/Msp</title>
+      <link>http://gobo.tv/blog/2017-04-10-programacion-visual-para-artistas/</link>
+      <pubDate>Mon, 10 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-04-10-programacion-visual-para-artistas/</guid>
+      <description>&lt;p&gt;Para la realización de audiovisuales interactivos, hablando de instalaciones, presentaciones multimedia creativa o eventos en directo, los que somos más de la rama visual nos encontramos con el problema de encontrar una plataforma que nos permita realizar éste tipo de proyectos sin volvernos locos con el aprendizaje de un lenguaje de programación o la realización de aplicaciones complejas que ofrezcan la parte de interactividad junto a la creatividad y contenido audiovisual.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>shot I</title>
+      <link>http://gobo.tv/blog/2017-04-10-shot-i/</link>
+      <pubDate>Mon, 10 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-04-10-shot-i/</guid>
+      <description>&lt;p&gt;🎧 El cantautor de moda de Marvel, Jim Croce: I got a name.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;spotify:track:2S0curmaVnRDRA4IBjigDb&#34;&gt;enlace: spotify&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>El descuento para retornados con Iberia</title>
+      <link>http://gobo.tv/blog/2017-03-24-el-descuento-para-retornados-de-iberia---copia/</link>
+      <pubDate>Fri, 24 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-03-24-el-descuento-para-retornados-de-iberia---copia/</guid>
+      <description>&lt;p&gt;!Ey! ya tengo todos mis papeles, regreso a España y desde la Consejería de Trabajo y Seguridad Social del consulado de España en México me ofrece una estupenda oferta: un descuento del 60% en el viaje de ida en Iberia&amp;hellip; :/&lt;/p&gt;
+
+&lt;p&gt;Es una buena oferta, seguro. Sólo tengo que entregar el libro de familia, el acta de matrimonio, la copia del pasaporte, la baja consular y la baja en hacienda, entregarlo en la susodicha consejería en persona (8 horas de viaje, 800 pesos sólo en el autobús y un día perdido) y al momento me darán la carta que.. tengo que entregar en persona el día del pago de los billetes en las oficinas de Iberia en México en el aeropuerto.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Video creación para redes sociales</title>
+      <link>http://gobo.tv/blog/2017-03-23-video-creacion-para-redes-sociales-/</link>
+      <pubDate>Thu, 23 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-03-23-video-creacion-para-redes-sociales-/</guid>
+      <description>&lt;p&gt;Cada vez vemos más videos en las redes sociales; algunos sustituyen a la típica imagen con alguna frase, y ahora crean relatos a través de la imagen en movimiento con texto superpuesto.
+En otras ocasiones se utilizan para vender un producto u ofrecer servicios mediante animaciones sencillas de objetos o personajes. Otros permiten seleccionar el texto que parece ir escribiéndose en la pantalla, o directamente te permite la creación de gifs a partir de tu colección de imágenes del smartphone.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Escenas 3D en la web</title>
+      <link>http://gobo.tv/blog/2017-03-11-escenas-3d-en-la-web/</link>
+      <pubDate>Sat, 11 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-03-11-escenas-3d-en-la-web/</guid>
+      <description>&lt;p&gt;Si el último post lo dedicamos a las posibilidades de los vídeos 360º para su reproducción el web, ya sea Facebook o Youtube, hoy vamos a hablar de algunas posibilidades que tenemos de mostrar escenas 3D.&lt;/p&gt;
+
+&lt;p&gt;Tenemos bastantes alternativas, dependiendo de lo que queramos y nuestros conocimientos; lo más sencillo sería utlizar servicios como Sketchfab, Blend4web y Marmoset Viewer. Estas aplicaciones nos permiten añadir un modelo 3d con sus texturas, iluminación y efectos para crear escenas simples sobre todo tipo turntables, es decir, poder girar la camara alrededor de la escena 3d para verla desde cualquier ángulo.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>3D en videos 360</title>
+      <link>http://gobo.tv/blog/2017-02-24-3d-en-videos-360/</link>
+      <pubDate>Fri, 24 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-02-24-3d-en-videos-360/</guid>
+      <description>&lt;p&gt;Para ampliar los servicios a ofrecer a los clientes, he estado estudiando las diferentes maneras de presentar el material 3D de manera interactiva en la web.&lt;/p&gt;
+
+&lt;p&gt;Lo primero y más sencillo a realizar son los videos 360º, que pueden reproducirse en Youtube o en Facebook, pero, ¿ qué tipo de producto puedes realizar? para escenas 3D podríamos recrear lugares para visitas virtuales, presentaciones arquitectónicas para el sector inmobiliario, y animaciones que pudieran utilizar la libertad de visión para crear narrativas múltiples, por ejemplo.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SEW el resumen</title>
+      <link>http://gobo.tv/blog/2017-02-14-sew-el-resumen/</link>
+      <pubDate>Tue, 14 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-02-14-sew-el-resumen/</guid>
+      <description>&lt;p&gt;Como os comenté la semana pasada estuvimos en el Startup Europe Weekeend en Valladolid. El martes tuvimos una charla de la Agencia de Desarrollo muy útil, en la que compartieron el tipo de ayuda que nos ofrecen.&lt;/p&gt;
+
+&lt;p&gt;Entre ellas el curso CREA, un curso de 30h en la que te ayudan a desarrollar un plan de empresa, las becas de 1500 eur para aquellos que vayan a formar una empresa, la Lanzadera de Empleo, ayudas reintegrables o el CreaNetwork.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Houdini 16 Amarok</title>
+      <link>http://gobo.tv/blog/2017-02-08-houdini-16-amarok/</link>
+      <pubDate>Wed, 08 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-02-08-houdini-16-amarok/</guid>
+      <description>Hooooy se presentó la nueva versión de Houdini. Dentro de las novedades, como los nuevos iconos y herramientas de ayuda en el panel de nodos, y el menú contextual, que va a facilitar sobre todo el trabajo de modelado, tenemos una nueva herramienta de booleanas. Tal vez las nuevas herramientas de creación de esqueletos y rigs son los que más necesitaba en mi flujo de trabajo para poder tener en Houdini una herramienta para &amp;ldquo;todo&amp;rdquo;, no tan sólo específica para efectos y animaciones procedurales.</description>
+    </item>
+    
+    <item>
+      <title>Startup Europe Week</title>
+      <link>http://gobo.tv/blog/2017-02-06-startup-europe-week/</link>
+      <pubDate>Mon, 06 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-02-06-startup-europe-week/</guid>
+      <description>Esta semana es el Startup Europe Weekend, y dentro de las ciudades que organizan el evento está Valladolid. Durante éstos tres días, habrá charlas y presentaciones, tanto de empresas locales que nos contarán sus experiencias, como organismos oficiales como la Cámara de Comercio con una charla sobre la búsqueda de financiación. Si te pasas nos veremos.</description>
+    </item>
+    
+    <item>
+      <title>Aterrizando</title>
+      <link>http://gobo.tv/blog/2017-01-28-aterrizando/</link>
+      <pubDate>Sat, 28 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-01-28-aterrizando/</guid>
+      <description>&lt;p&gt;Hop! ya estoy aquí. Valladolid, ciudad castellana y por estas fechas helada. Me recibes a bajo cero y un poco de lluvia, pero te lo perdono.&lt;/p&gt;
+
+&lt;p&gt;A parte del cambio horario que me hace desear dormir a las siete de la tarde y no querer despertarme hasta las doce del mediodía, todo ha ido bien, muy bien.&lt;/p&gt;
+
+&lt;p&gt;Iniciar una nueva vida en otro lugar aunque sea el tuyo, requiere de los trámites que imaginamos: seguridad social, hacienda, empadronamiento, certificados.. y visitas a extranjería para solicitar el certificado de emigrante, la Agencia De Innovación para becas, subenciones, la Cámara de Comercio, etc..&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Querétaro - Valladolid</title>
+      <link>http://gobo.tv/blog/2017-01-21-queretarovalladolid/</link>
+      <pubDate>Sat, 21 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-01-21-queretarovalladolid/</guid>
+      <description>&lt;p&gt;Un año más viajo a la madre patria. Esta vez en cambio, es especial: con este viaje inicio mi mudanza definitiva; dejo México para volver a España.&lt;/p&gt;
+
+&lt;p&gt;Han sido 7 años que fueron lo que necesitaba en muchos aspectos; de sentirme bloqueado a nivel personal y profesional, para encontrarme con nuevas formas de ver la vida y sus oportunidades.&lt;/p&gt;
+
+&lt;p&gt;Pero ey, antes de contarte mi vida, siguamos con el tema que nos trae hoy: ¿ cuanto se tarda en hacer el viaje de Querétaro a Valladolid?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Presentaciones congeladas</title>
+      <link>http://gobo.tv/blog/2017-01-19-presentaciones-congeladas/</link>
+      <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-01-19-presentaciones-congeladas/</guid>
+      <description>&lt;p&gt;Hace unos días tuvimos una presentación para una serie de vídeos animados educativos en un colegio, así que me puse manos a la obra: primero la búsqueda de referencias y empaparse un poco de lo que se hace ahora, tanto para vídeos educativos para la BBC como infantiles en canales tipo Cartoon Networks.&lt;/p&gt;
+
+&lt;p&gt;Siendo un producto para un colegio, hay que ser conservador, con personajes &amp;ldquo;normales&amp;rdquo;, nada de pulpos habladores, vampiros y otra fauna. No es fácil dar forma a la idea de una serie, aunque sea uno educativo con dos o tres personajes, y decorados actuales representados en el presente. A medida que creas ése mundo se enriquece, y empiezas a formar parte de él, imaginándote cómo son los personajes, como actuan, dónde, cual es su psicología&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Desmontando la T7500</title>
+      <link>http://gobo.tv/blog/2017-01-16-desmontando-la-t7500/</link>
+      <pubDate>Mon, 16 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-01-16-desmontando-la-t7500/</guid>
+      <description>Mi querido equipo, tantos años juntos, no podía dejar la Dell T7500 en México. Así que me propongo traerla en avión.
+El primer problema es el peso: 28Kg, que inevitablemente en Iberia me costaría el pago de una maleta extra con exceso de peso, es decir: entre 150 y 200 euros. Ok, vamos adesmontarla, y la llevaré en dos maletas.
+El proceso de desmontaje es sencillo, realmente. Primero la tapa del procesador, discos duros y sus horquillas, tarjeta gráfica, ventiladores delanteros, de los discos, fuente de alimentación, dvd.</description>
+    </item>
+    
+    <item>
+      <title>Por el consulado</title>
+      <link>http://gobo.tv/blog/2017-01-10-por-el-consulado/</link>
+      <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-01-10-por-el-consulado/</guid>
+      <description>Me muevo a España! pero antes hay que hacer bastante papeleo, entre ellos darse de baja en algunos servicios y de alta en otros. Entre ellos el certificado de matrimonio y el certificado de emigrante.
+Nadie sabe como conseguir pro aquí el certificado de emigrante, y para el primero necesito un certificado (otro) de nacimiento de menos de seis meses; prentendo conseguirlo mediante el.. certificado! digital.
+Pero nadie sabe (consulado honorario de Querétaro) sabe que es necesario rellenar una solicitud junto al código que te entrega el FNMT.</description>
+    </item>
+    
+    <item>
+      <title>Acting for Animators</title>
+      <link>http://gobo.tv/blog/2017-01-03-acting-for-animators/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-01-03-acting-for-animators/</guid>
+      <description>&lt;p&gt;Actualmente me encuentro leyendo éste libro del escritor Ed Hooks, aprovechando que estoy realizando una propuesta sobre una serie de animación educativa.&lt;/p&gt;
+
+&lt;p&gt;Se puede encontrar ahora a muy buen precio en Amazon como descarga digital para Kindle. En cambio y por expreso deseo del autor ya no se imprime en papel desde hace un tiempo y por lo tanto su precio es más elevado.&lt;/p&gt;
+
+&lt;p&gt;Lo primero que demeos de saber es que no estamos frente a un libro que nos enseñe cómo animar o recrear diferentes posiciones a nuestros personajes digitales.
+Nos muestra en cambio, y mediante un lenguaje muy sencillo de entender a través de ejemplos, cómo &amp;ldquo;piensa&amp;rdquo; nuestro personaje, plantear las escenas desde un punto de vista &amp;ldquo;teatral&amp;rdquo;,  a través de &lt;strong&gt;Los siete principios esenciales de la actuación.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Redshift GPU render</title>
+      <link>http://gobo.tv/blog/2017-01-03-redshift3d/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-01-03-redshift3d/</guid>
+      <description>&lt;p&gt;Entonces te das cuenta de que tu CPU se ha hecho viejita, y que el nivel de render que deseas con esos nuevos algoritmos de iluminación global super-realistas se alejan de tí proporcionalmente a las horas de procesamiento de cada frame.&lt;/p&gt;
+
+&lt;p&gt;Piensas, ok, renderfarms! pero no todos los clientes te van a pagar por el servicio. Si es verdad que seguiran siendo indispensables para algunos trabajos, sobre todo en renders de Mantra de Houdini, que es CPU y siempre lo será.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Unos meses atrás</title>
+      <link>http://gobo.tv/blog/2016-07-18-unos-meses-atras/</link>
+      <pubDate>Mon, 18 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2016-07-18-unos-meses-atras/</guid>
+      <description>&lt;p&gt;Uf, hace tiempo que no escribía por aquí.
+Nunca pensé que mi faceta de blogger fuera a proporcionar abundante-actualizada información de lo que sucede en el estudio, aunque tengo que reconocer que cuatro meses son demasiados, así que vamos a ponernos al día.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Houdini Displacements</title>
+    <link rel="stylesheet" href="http://gobo.tv//css/fa/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="http://gobo.tv/images/favicon.ico">
+    <link rel="stylesheet" href="http://gobo.tv/css/style.css">
+
+    <base href="http://gobo.tv/">
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-5820146-2', 'auto');
+ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+    <div class="container-fluid" >
+        <nav id="navbar" class="navbar fixed-top navbar-toggleable-sm  navbar-light container-fluid " >
+            <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <a class="navbar-brand logo" href="http://gobo.tv/"><img src="http://gobo.tv/images/logoBlack.png" height="45" alt=""></a>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    
+                    
+                            <li class="nav-item anav">
+                                <a class="nav-link " href="http://gobo.tv/work/">WORK</a>
+                            </li>
+                    
+                            <li class="nav-item anav">
+                                <a class="nav-link " href="http://gobo.tv/">BLOG</a>
+                            </li>
+                    
+                            <li class="nav-item anav">
+                                <a class="nav-link " href="http://gobo.tv/me/">ME</a>
+                            </li>
+                                   
+                </ul>
+            </div>
+        </nav>
+ 
+
+
+ <div class="col-12 cabecera"><a href="http://gobo.tv/"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></a><br/> 
+      <h2><span class="borde">Houdini Displacements</span></h2></div>
+<div class="row">
+  <div class="col-12"><nav class="tags nav justify-content-center flex-column flex-sm-row">&nbsp;<a class="label" href="http://gobo.tv/tags/software">software</a>&nbsp;&nbsp;<a class="label" href="http://gobo.tv/tags/profesional">profesional</a>&nbsp;</nav><div class="text-center" style="margin-bottom:40px">
+    <img class="imglistado img-fluid rounded-circle" src="portadas/portadaDisplacement.png" />
+   </div><p>Hola de nuevo! Éste post es un resumen de una semana en la que en tiempos libres he re-visitado las posibilidades de modificación de la geometría mediante texturas a través de la herramienta Displacement.</p>
+
+<p>En  nuestro caso no vamos a utilizar en los ejemplos archivos de imágenes, sino nodos tipo noise, los cuales mezclaremos y modificaremos para conseguir patrones y tipos de desplazamiento diferentes.</p>
+
+<p></p>
+
+<p>En primero lugar, veremos el displace a través de nodos PointVOP directamente en nuestro objeto, para modificar las posiciones de los vértices del mismo. A continuación modificaremos la apariencia de nuestro modelo a través de mapas de desplazamiento aplicado directamente al shader, y finalmente usaremos las herramientas de generación de volumen VDB, para convertirlas más tarde en geometrías modificadas mediante los nodos tipo noise. Empecemos!</p>
+
+<h3 id="vop-displacement">VOP displacement</h3>
+
+<p>Para modificar geometría a través de un mapa de desplazamiento, generalmente necesitaremos una gran cantidad de polígonos, para que podamos ver con el mayor detalle el efecto de la textura en el objeto. Lo malo de éste sistema es que efectivamente terminamos con modelos muy pesados y difíciles de usar; lo bueno es que es geometría real con la que podremos interactuar con otros nodos de modificación de la geometría.</p>
+
+<p>
+<modal>
+  <div class="zoom">
+    <img class="img-fluid imgPost" data-toggle="modal" data-target="#myModal" data-titu="Displacement sobre geometría" data-srct="portadas/disp_vop.png" src="portadas/disp_vop.png">
+    <div class="ico">
+        <img class="img-fluid imgPost" data-toggle="modal" data-target="#myModal" src="images/zoom-in.png">
+    </div>
+  </div>
+  <i class="icon-camera-retro icon-2x"></i>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i style="color:white" class="fa fa-times" aria-hidden="true"></i></span></button>
+        </div>
+        <div class="modal-body text-center">
+          <img class="imgFull img-fluid imgPost" src="portadas/disp_vop.png" alt="Displacement sobre geometría" />          
+        </div>
+      </div>
+    </div>
+  </div>
+</modal>
+<em>Desplazamiento directamente en geometría.</em>
+<br/>&nbsp;<br /></p>
+
+<p>En los ejemplos de  a continuación he tratado de imitar cuatro modelos de la página sobre el nodo VOP Unified Noise : <a href="http://www.sidefx.com/docs/houdini/nodes/vop/unifiednoise">http://www.sidefx.com/docs/houdini/nodes/vop/unifiednoise</a>
+SHOP displacement</p>
+
+<p>Partimos de una esfera poligonal, a la que añado una frecuencia de valor 20 para añadir una buena resolución, multiplicada posteriormente por un nodo subdivide, con la propiedad depth con valor 3.</p>
+
+<p>Creamos a continuación un nodo pointVOP, donde ocurre la magia:</p>
+
+<p>
+<modal>
+  <div class="zoom">
+    <img class="img-fluid imgPost" data-toggle="modal" data-target="#myModal" data-titu="Dentro del pointVOP" data-srct="portadas/vopnodos.png" src="portadas/vopnodos.png">
+    <div class="ico">
+        <img class="img-fluid imgPost" data-toggle="modal" data-target="#myModal" src="images/zoom-in.png">
+    </div>
+  </div>
+  <i class="icon-camera-retro icon-2x"></i>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i style="color:white" class="fa fa-times" aria-hidden="true"></i></span></button>
+        </div>
+        <div class="modal-body text-center">
+          <img class="imgFull img-fluid imgPost" src="portadas/vopnodos.png" alt="Dentro del pointVOP" />          
+        </div>
+      </div>
+    </div>
+  </div>
+</modal>
+<em>Podemos ver el desplazamiento en el visor, a costa de mallas muy densas.</em>
+<br/>&nbsp;<br /></p>
+
+<p>En éstos ejemplos tenemos un esquema muy sencillo, donde el peso de las modificaciones se encuentra en el nodo Unified Noise, al cual conectamos la posición de los vértices de la geometría, los cambiamos a través de sus propiedades, eligiendo el tipo de noise: Perlin, Sinusoid, Worley, etc..  Y opciones generales como frecuencia, amplitud y desplazamiento (offset). Otras opciones nos permiten invertir el efecto, o seleccionar el rango de valores final (clamp). Incluso podemos añadir un desplazamiento secundario desde las opciones Fractal.</p>
+
+<p>La salida del nodo se conecta a otro tipo Displace Along Normal a su propiedad amount, conectando la entrada P (Position) directamente desde el nodo de la geometría.</p>
+
+<p><strong>Pros:</strong>
+podemos modificar la geometría más adelante a través de nodos procedurales directamente en los objetos Geo.
+Vemos el resultado directamente en el viewport sin necesidad de render.</p>
+
+<p><strong>Contras:</strong>
+La geometría es muy pesada.
+No conseguiremos detalles muy pequeños
+Al no conseguir un gran detalle, veremos bordes &ldquo;rotos&rdquo; y otros problemas en la geometría, y si los quitamos mediante un smooth la veremos demasiado suavizada.</p>
+
+<p>Personalmente se puede usar para modificar la geometría en su forma más general, como base para otros ajustes mediante texturas.</p>
+
+<h3 id="shop-displacement">SHOP Displacement</h3>
+
+<p>Otra forma de añadir un mapa de desplazamiento es directamente en el material: aunque el nuevo shader PrincipleShader de Houdini tiene opciones para importar texturas para tal fin, podemos usar los nodos para conectar la entrada Disp y VDiso (desplazamiento por vectores).</p>
+
+<p>
+<modal>
+  <div class="zoom">
+    <img class="img-fluid imgPost" data-toggle="modal" data-target="#myModal" data-titu="Geometría con desplazamiento a través del shader" data-srct="portadas/disp_shop.png" src="portadas/disp_shop.png">
+    <div class="ico">
+        <img class="img-fluid imgPost" data-toggle="modal" data-target="#myModal" src="images/zoom-in.png">
+    </div>
+  </div>
+  <i class="icon-camera-retro icon-2x"></i>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i style="color:white" class="fa fa-times" aria-hidden="true"></i></span></button>
+        </div>
+        <div class="modal-body text-center">
+          <img class="imgFull img-fluid imgPost" src="portadas/disp_shop.png" alt="Geometría con desplazamiento a través del shader" />          
+        </div>
+      </div>
+    </div>
+  </div>
+</modal>
+<em>Desplazamientos directamente en el material</em>
+<br/>&nbsp;<br /></p>
+
+<p>Al igual que en los nodos VOP, podemos usar diferentes tipos de Noise, los cuales usarán la posición de los vértices o de UV para ajustarse a la geometría. Es importante añadir el nodo <strong>Rest</strong> al final del árbol del objeto, de manera de que podamos &ldquo;pegar&rdquo; el mapa a los puntos; luego podremos usar éste mismo nodo Rest como entrada a aquellos que requieran una entrada P (position) para ajustarse a la geometría.</p>
+
+<p>En el caso de la imagen, debemos añadir las UV en la geometría y luego importarlo al material. A través de diferentes combinaciones podemos crear diferentes tipos de desplazamientos, desde los más aleatorios hasta lo tileables o repetitivos.</p>
+
+<p>
+<modal>
+  <div class="zoom">
+    <img class="img-fluid imgPost" data-toggle="modal" data-target="#myModal" data-titu="Shader con desplazamiento a partir de varias texturas procedurales" data-srct="portadas/shopnodos.png" src="portadas/shopnodos.png">
+    <div class="ico">
+        <img class="img-fluid imgPost" data-toggle="modal" data-target="#myModal" src="images/zoom-in.png">
+    </div>
+  </div>
+  <i class="icon-camera-retro icon-2x"></i>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i style="color:white" class="fa fa-times" aria-hidden="true"></i></span></button>
+        </div>
+        <div class="modal-body text-center">
+          <img class="imgFull img-fluid imgPost" src="portadas/shopnodos.png" alt="Shader con desplazamiento a partir de varias texturas procedurales" />          
+        </div>
+      </div>
+    </div>
+  </div>
+</modal>
+<em>Nodos creando un desplazamiento repetitivo, en el recuadro los nodos uv y rest en la geometría.</em>
+<br/>&nbsp;<br /></p>
+
+<p>Lo bueno de realizar el desplazamiento a través de mapas dentro de los materiales es que ya no tenemos la limitación del número de puntos de la geometría, es mas; una geometría con pocos polígonos es suficiente para añadir mucho detalle. Estos detalles además pueden ser realmente pequeños o con aristas y podremos verlos con nitided.</p>
+
+<p><strong>Pros:</strong>
+Render rápido, control total independientemente de la densidad de la malla de la geometría
+Mayor calidad en el desplazamiento, permite mapas con mucho detalle.</p>
+
+<p><strong>Contras:</strong>
+Los mapas de desplazamiento se recrean durante el render, por lo que en algunos casos no podremos usar el desplazamiento en las modificaciones del objeto.
+Ajustes finos para resaltar detalles muy pequeños pueden incrementar el tiempo de render.</p>
+
+<p>Personalmente lo usaría en detalles más finos y no como modificaciones importantes de la geometría.</p>
+
+<h3 id="volume-displacement">Volume Displacement</h3>
+
+<p>Realmente esta técnica permite modificar el volumen a través de un VolumeVOP igual que en el caso de la geometría mediante PointVOP.
+En el ejemplo, y a partir de volúmenes tipo VDB convertimos una geometría a volumen, modificamos las propiedades del volumen para luego convertilo de nuevo a geometría.</p>
+
+<p>Gracias a que ahora tenemos un volumen, podemos actuar sobre el <em>interior</em> del objeto, añadiendo huecos y recreando geometría más compleja. Además, podemos componer diferentes volúmes de geometrías o crear un volumen único de varias geometría para pasar a considerarlas un único objeto, <em>fusionandolas</em> para generar objetos más interesantes.</p>
+
+<p>
+<modal>
+  <div class="zoom">
+    <img class="img-fluid imgPost" data-toggle="modal" data-target="#myModal" data-titu="Nodos VDB desde / a geometría" data-srct="portadas/volumeDisp.png" src="portadas/volumeDisp.png">
+    <div class="ico">
+        <img class="img-fluid imgPost" data-toggle="modal" data-target="#myModal" src="images/zoom-in.png">
+    </div>
+  </div>
+  <i class="icon-camera-retro icon-2x"></i>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i style="color:white" class="fa fa-times" aria-hidden="true"></i></span></button>
+        </div>
+        <div class="modal-body text-center">
+          <img class="imgFull img-fluid imgPost" src="portadas/volumeDisp.png" alt="Nodos VDB desde / a geometría" />          
+        </div>
+      </div>
+    </div>
+  </div>
+</modal>
+<em>Volumen a partir de objetos, nodo VolumeVOP y conversión de nuevo a geometría.</em>
+<br/>&nbsp;<br /></p>
+
+<p>La oportunidad ahora de recrear diferentes tipos de geometrías procedurales, desde montañas o paisajes, pasando por rocas hasta células y representaciones microscópicas es mayor, con una gran capacidad de controlar la forma final del objeto. El render propuesto además tiene añadido un noise tipo Alligator en el shader.</p>
+
+<p>
+<modal>
+  <div class="zoom">
+    <img class="img-fluid imgPost" data-toggle="modal" data-target="#myModal" data-titu="Render final volumeVOP" data-srct="portadas/volume_displ.png" src="portadas/volume_displ.png">
+    <div class="ico">
+        <img class="img-fluid imgPost" data-toggle="modal" data-target="#myModal" src="images/zoom-in.png">
+    </div>
+  </div>
+  <i class="icon-camera-retro icon-2x"></i>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i style="color:white" class="fa fa-times" aria-hidden="true"></i></span></button>
+        </div>
+        <div class="modal-body text-center">
+          <img class="imgFull img-fluid imgPost" src="portadas/volume_displ.png" alt="Render final volumeVOP" />          
+        </div>
+      </div>
+    </div>
+  </div>
+</modal>
+<em>Render final volumeVOP</em>
+<br/>&nbsp;<br /></p>
+
+<p><strong>Pros:</strong>
+Podemos usar cualquier combinación de geometría y convertirla en volúmen tipo VDB o IsoOffset, las modificaciones a través del volumeVOP actúa también en el interior <em>sólido</em> del objeto.
+Se crean geometrías con huecos, salientes y más <em>procedurales</em>
+El desplazamiento generado es parte de la geometría y por lo tanto podemos actuar más adelante sobre ella.</p>
+
+<p><strong>Contras:</strong>
+Seguimos teniendo una geometría de muy alta densidad, más lenta para renderizar y de usar, dfícil conseguir aristas perfectas o detalles pequeños, para ello debemos ayudarnos de mapas tipo bump o normal map, u otro desplazamiento desde el shader.</p>
+
+<p>Podemos usarlo como base para crear geometría que luego detallaremos mediante otros mapas de detalle.
+<br/>&nbsp;<br /></p>
+
+<h5 id="archivos">Archivos</h5>
+
+<p><a href="archivos/files_displacement.zip">ZIP con tres escenas de Houdini, VOP, SHOP y Volume displacements</a><br/></p>
+
+<h5 id="enlaces">Enlaces</h5>
+
+<p><a href="https://vimeo.com/75313908">Vimeo Working with Noise</a><br/>
+<a href="https://vimeo.com/228238370">Vimeo Procedural rock formations</a><br/>
+<a href="http://www.sidefx.com/docs/houdini/nodes/vop/unifiednoise">Unified Noise</a><br/>
+<a href="https://vimeo.com/143618200">Vimeo Mantra rendering and texture baking</a><br/></p></div><div class="col-12 text-right iconos-social">
+  
+  <a href="https://twitter.com/intent/tweet?text=Houdini%20Displacements&url=http%3a%2f%2fgobo.tv%2fblog%2f2017-09-19-houdini-displacements%2f&via=gobotw&related=gobotw" 
+  rel="nofollow" 
+  target="_blank" 
+  title="Comparte en Twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a> 
+</div></div>        <div class="row" id="footer" style="height:100px">
+            <div class="col-md-6 col-sm-12">
+            Carlos Santos Mateo GOBO 2017
+            </div>
+
+            <div class="col-md-6 col-sm-12 social"  >
+                <a href="https://twitter.com/gobotw" target="_blank">twitter</a> | 
+                <a href="https://www.linkedin.com/in/gobolinkedin/" target="_blank">linkedin</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
+    <script src="http://gobo.tv/js/codigo.js"></script>
+
+    </body>
+</html>

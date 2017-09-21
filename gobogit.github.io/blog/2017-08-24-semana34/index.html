@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Semana 34 &#39;17</title>
+    <link rel="stylesheet" href="http://gobo.tv//css/fa/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="http://gobo.tv/images/favicon.ico">
+    <link rel="stylesheet" href="http://gobo.tv/css/style.css">
+
+    <base href="http://gobo.tv/">
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-5820146-2', 'auto');
+ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+    <div class="container-fluid" >
+        <nav id="navbar" class="navbar fixed-top navbar-toggleable-sm  navbar-light container-fluid " >
+            <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <a class="navbar-brand logo" href="http://gobo.tv/"><img src="http://gobo.tv/images/logoBlack.png" height="45" alt=""></a>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    
+                    
+                            <li class="nav-item anav">
+                                <a class="nav-link " href="http://gobo.tv/work/">WORK</a>
+                            </li>
+                    
+                            <li class="nav-item anav">
+                                <a class="nav-link " href="http://gobo.tv/">BLOG</a>
+                            </li>
+                    
+                            <li class="nav-item anav">
+                                <a class="nav-link " href="http://gobo.tv/me/">ME</a>
+                            </li>
+                                   
+                </ul>
+            </div>
+        </nav>
+ 
+
+
+ <div class="col-12 cabecera"><a href="http://gobo.tv/"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></a><br/> 
+      <h2><span class="borde">Semana 34 &#39;17</span></h2></div>
+<div class="row">
+  <div class="col-12"><nav class="tags nav justify-content-center flex-column flex-sm-row">&nbsp;<a class="label" href="http://gobo.tv/tags/personal">personal</a>&nbsp;&nbsp;<a class="label" href="http://gobo.tv/tags/profesional">profesional</a>&nbsp;</nav><h3 id="touchdesigner">Touchdesigner</h3>
+
+<p><br>
+Una parte fundadamental en el aprendizaje de un nuevo software es el soporte en forma de ayuda o tutoriales del propio desarrollador, pero tan importante como la documentación es el trabajo de personas que desinteresadamente ofrecen sus conocimientos a través de tutoriales y foros.</p>
+
+<p></p>
+
+<p>Touchdesigner no es una excepción, aunque al ser un software con menor base de usuarios que otras aplicaciones, resulta complicado a veces encontrar la respuesta que buscas, sobre todo teniendo cuenta el carácter <em>procedural</em> y experimental del software.</p>
+
+<p>Una gran ayuda en éstos primeros pasos son la gran documentación de Matthew Ragan, un artista que simultanea sus trabajos con la docencia junto a cursos, talleres y vídeos sobre Touchdesigner en particular y proyecciones e instalaciones creativas en general.</p>
+
+<p>Esta semana, a partir del tutorial de creación de una interface de selección, reproducción y aplicación de filtros en vídeos, he modificado el proyecto para incluir subtítulos a cada uno de los vídeos. Un archivo que contiene los textos y el momento en el tiempo en el que deben aparecer es léido y tranformado en una tabla DAT.</p>
+
+<p>Mediante un pequeño script de <strong>Python</strong> leemos la línea de tiempo para que, cuando coincida con el tiempo del subtitulo, aparezca en la interface. Aunque <em>TD</em> es un programa que se basa en la generación de código a través de nodos, cuando necesitamos flujos de repetición, lógica, selección y lectura de listas es conveniente realizar las operaciones en scripts, que se ejecutarán dentro de nodos tipo <em>Execute</em>.</p>
+
+<h3 id="glsl">GLSL</h3>
+
+<p><br>
+Otra de mis inquietudes son los shaders, con los que podemos realizar un gran número de efectos visuales con una carga de procesador mínima y aprovechando la GPU gráfica. La programación se realiza en <strong>C</strong>, y los programas que realizamos se basan en la modificación de los píxeles del renderizado y los vértices de la geometría.</p>
+
+<p>A partir de ahí las posibilidades de modificación de la propia estructura del objeto y su apariencia es prácticamente infinita. Un gran recurso que estoy siguiendo es la página web <em>thebookofshaders.com</em> de Patricio González. Por puesto, Matthew ya se ha encargado de portar el código para ejecutarlos en el entorno de TD.</p>
+
+<p><a href="https://matthewragan.com/">Matthew Ragan</a><br/>
+<a href="http://patriciogonzalezvivo.com/">Patricio González</a><br/>
+<a href="https://thebookofshaders.com/">Thebookofshaders</a><br/>
+<a href="https://matthewragan.com/2017/07/28/the-book-of-shaders-in-touchdesigner/">Archivos portados a TD</a></p></div><div class="col-12 text-right iconos-social">
+  
+  <a href="https://twitter.com/intent/tweet?text=Semana%2034%20%2717&url=http%3a%2f%2fgobo.tv%2fblog%2f2017-08-24-semana34%2f&via=gobotw&related=gobotw" 
+  rel="nofollow" 
+  target="_blank" 
+  title="Comparte en Twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a> 
+</div></div>        <div class="row" id="footer" style="height:100px">
+            <div class="col-md-6 col-sm-12">
+            Carlos Santos Mateo GOBO 2017
+            </div>
+
+            <div class="col-md-6 col-sm-12 social"  >
+                <a href="https://twitter.com/gobotw" target="_blank">twitter</a> | 
+                <a href="https://www.linkedin.com/in/gobolinkedin/" target="_blank">linkedin</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
+    <script src="http://gobo.tv/js/codigo.js"></script>
+
+    </body>
+</html>

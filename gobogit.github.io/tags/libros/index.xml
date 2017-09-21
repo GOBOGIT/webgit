@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Libros on GOBO</title>
+    <link>http://gobo.tv/tags/libros/</link>
+    <description>Recent content in Libros on GOBO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Tue, 03 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://gobo.tv/tags/libros/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Acting for Animators</title>
+      <link>http://gobo.tv/blog/2017-01-03-acting-for-animators/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://gobo.tv/blog/2017-01-03-acting-for-animators/</guid>
+      <description>&lt;p&gt;Actualmente me encuentro leyendo éste libro del escritor Ed Hooks, aprovechando que estoy realizando una propuesta sobre una serie de animación educativa.&lt;/p&gt;
+
+&lt;p&gt;Se puede encontrar ahora a muy buen precio en Amazon como descarga digital para Kindle. En cambio y por expreso deseo del autor ya no se imprime en papel desde hace un tiempo y por lo tanto su precio es más elevado.&lt;/p&gt;
+
+&lt;p&gt;Lo primero que demeos de saber es que no estamos frente a un libro que nos enseñe cómo animar o recrear diferentes posiciones a nuestros personajes digitales.
+Nos muestra en cambio, y mediante un lenguaje muy sencillo de entender a través de ejemplos, cómo &amp;ldquo;piensa&amp;rdquo; nuestro personaje, plantear las escenas desde un punto de vista &amp;ldquo;teatral&amp;rdquo;,  a través de &lt;strong&gt;Los siete principios esenciales de la actuación.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
