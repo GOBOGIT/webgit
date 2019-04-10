@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/fa/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+
+    <base href="{{ .Site.BaseURL }}">
+
+    {{ template "_internal/google_analytics.html" . }}
+</head>
+
+<body>
+    <div class="container-fluid" >
+        <nav id="navbar" class="navbar fixed-top navbar-toggleable-sm  navbar-light container-fluid " >
+            <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <a class="navbar-brand logo" href="/"><img src="/images/logoBlack.png" height="45" alt=""></a>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    {{ $currentNode := . }}
+                    {{ range .Site.Menus.main }}
+                            <li class="nav-item anav">
+                                <a class="nav-link " href="{{ .URL }}">{{ .Name | upper }}</a>
+                            </li>
+                    {{ end }}               
+                </ul>
+            </div>
+        </nav>
+ 
+
+
+ 

@@ -1,0 +1,24 @@
+<!-- Modal -->
+<modal>
+  <div class="zoom">
+    <img class="img-fluid imgPost" data-toggle="modal" data-target="#myModal" data-titu="{{.Get "titulo" }}" data-srct="{{.Get "src" }}" src="{{.Get "src" }}">
+    <div class="ico">
+        <img class="img-fluid imgPost" data-toggle="modal" data-target="#myModal" src="images/zoom-in.png">
+    </div>
+  </div>
+  <i class="icon-camera-retro icon-2x"></i>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i style="color:white" class="fa fa-times" aria-hidden="true"></i></span></button>
+        </div>
+        <div class="modal-body text-center">
+          <img class="imgFull img-fluid imgPost" src="{{.Get "src" }}" alt="{{.Get "titulo"}}" />          
+        </div>
+      </div>
+    </div>
+  </div>
+</modal>

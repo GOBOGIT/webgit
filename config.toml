@@ -1,0 +1,30 @@
+baseURL = "http://gobo.tv/"
+languageCode = "es-es"
+title = "GOBO"
+sectionPagesMenu ="main"
+paginate = 10
+theme = "gobo"
+themesDir ="themes"
+googleAnalytics = "UA-5820146-2"
+enableEmoji = true
+canonifyurls = true
+
+
+[menu]
+
+    [[menu.main]]
+        name = "work"
+        url = "/work/"
+        weight = 10
+
+       [[menu.main]]
+        name = "blog"
+        url = "/"
+        weight = 20
+
+ 
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+
+

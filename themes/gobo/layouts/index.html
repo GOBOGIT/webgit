@@ -1,0 +1,25 @@
+{{- partial "header.html" . -}}
+<div class="col-12 cabecera">
+  <h1><span class="borde">hola_</span></h1>
+   3D | Animación | VFX
+</div>
+<div class="row" >
+  <div class="col-12">
+    {{- range .Site.Pages -}}
+        {{- if in .Params.categories "feed" -}}
+            {{- if .Params.tags -}}
+                {{- $.Scratch.Add "b" .Params.tags -}}              
+            {{- end -}}                        
+        {{- end -}}
+    {{- end -}}
+
+    {{- $.Scratch.Add "url" "/" -}}
+    {{- partial "listadotags.html" . -}} 
+ </div>
+  {{- range  .Data.Pages -}}
+    {{- if in .Params.categories "feed" -}}
+      {{- partial "listado.html" . -}}
+    {{- end -}}   
+  {{- end -}}
+</div>
+  {{- partial "footer.html" . -}}

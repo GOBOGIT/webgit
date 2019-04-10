@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+<div class="col-12 cabecera">
+    <h2>{{ .Title }}</h2>
+    {{ .Params.empresa }}
+</div>
+
+<div class="row" >
+    <div class="col-12">    
+     {{ if .Params.tags }}
+        <nav class="tags nav justify-content-center flex-column flex-sm-row text-center" >
+            {{ range .Params.tags }}
+            <a class="label" href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a> 
+            {{end}}
+        </nav>
+        {{ end }}
+        <section class="text-center" style=" margin-bottom:40px">
+            <iframe src="https://player.vimeo.com/video/{{ .Params.vimeoID }}?title=0&byline=0&portrait=0" width="100%" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </section>
+ 
+        {{ .Content }}
+    </div>
+    {{- partial "social.html" . -}}
+</div>
+{{ partial "footer.html" . }}

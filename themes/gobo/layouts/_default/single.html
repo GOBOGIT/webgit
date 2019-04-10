@@ -1,0 +1,55 @@
+{{- partial "header.html" . -}}
+<div class="col-12 cabecera">    
+  {{- if eq .Title "me" -}}
+      <h1><span class="borde">{{ .Title }}</span></h1>
+  {{- else -}}
+      <a href="/"><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></a><br/> 
+      <h2><span class="borde">{{ .Title }}</span></h2>
+  {{- end -}}
+
+  {{- if .Params.subtitle -}}
+    {{- .Params.subtitle -}}
+  {{- end -}}
+</div>
+<div class="row">
+  <div class="col-12">
+
+
+ {{- if .Params.tags -}}
+  <nav class="tags nav justify-content-center flex-column flex-sm-row">
+      {{- range .Params.tags -}}
+        &nbsp;<a class="label" href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>&nbsp;
+      {{- end -}}
+  </nav> 
+  {{- end -}}
+    
+  {{- if .Params.imagen -}}
+      <div class="text-center" style="margin-bottom:40px">
+    <img class="imglistado img-fluid rounded-circle" src="portadas/{{ (print .Params.imagen ".png") }}" />
+   </div>
+  {{- end -}}
+
+{{ .Content }}
+
+  {{- if eq .Title "me" -}}<br /><h4>Clientes</h4><br/>{{- end -}}
+  </div>
+
+  {{- if eq .Title "me" -}}
+    {{- $files := readDir "static/logos/" -}}    
+    {{- range $files -}} 
+      {{- if not (in .Name "thumb.jpg") -}}
+      <div class="col-6 col-lg-2 col-md-3 col-sm-4 col-xs-12 ">
+        <img class="d-block img-fluid" src="logos/{{ .Name }}" style="width:100%" />
+      </div>
+      {{- end -}} 
+    {{- end -}}
+  {{- end -}}
+
+{{- $.Scratch.Set "titulo"  .Title -}}
+
+{{- partial "social.html" . -}}
+
+
+</div>
+{{- partial "footer.html" . -}}
+

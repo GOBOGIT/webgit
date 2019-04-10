@@ -1,0 +1,15 @@
+ <div class="col-12" style="margin-bottom:60px">
+    <a href="{{ .Permalink }}">
+        <h5>{{ .Title }}</h5>
+    </a>
+    {{ if .Params.imagen }}
+    <div class="text-center" style="margin:40px 0px 40px 0px">
+       <img class=" imglistado img-fluid rounded-circle" src="portadas/{{ (print .Params.imagen ".png")}}" /><br/>
+    </div>
+    {{ end }}
+    {{ .Summary | markdownify  }}
+    {{ range .Params.tags }}
+        <a class="label" href="{{ "tags/" | absURL }}{{ . | urlize }}">
+            <span class="badge badge-default sm">{{ . }}</span></a>&nbsp;
+    {{ end }}
+ </div>

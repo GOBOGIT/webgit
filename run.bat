@@ -1,0 +1,1 @@
+"C:\Users\Carlos Santos\OneDrive\web\bin\hugo.exe" serve -t gobo

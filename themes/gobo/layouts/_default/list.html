@@ -1,0 +1,45 @@
+{{- partial "header.html" . -}}
+<div class="col-12 cabecera" >
+    <h1><span class="borde">{{ .Title }}</span></h1>
+</div>
+<div class="row">
+    <div class="col-12">
+    {{- range .Data.Pages -}}
+    {{- if in .Params.categories "feed" -}}
+            {{- $.Scratch.Set  "val"  "feed" -}}
+            {{- $.Scratch.Set  "url"  "/" -}} 
+    {{- else if in .Params.categories "work" -}}
+            {{- $.Scratch.Set  "val"  "work" -}}
+            {{- $.Scratch.Set  "url"  "/work" -}}
+    {{- else -}}
+            {{- $.Scratch.Set  "val"  "proyectos" -}}
+            {{- $.Scratch.Set  "url"  "/proyectos" -}}
+        {{- end -}}
+    {{- end -}}
+
+    {{- range .Site.Pages -}}
+        {{- if in .Params.categories ($.Scratch.Get  "val") -}}
+            {{- if .Params.tags -}}
+                {{- $.Scratch.Add "b" .Params.tags -}}
+            {{- end -}}                        
+        {{- end -}}
+    {{- end -}}
+
+    {{- partial "listadotags.html" . -}} 
+    </div>
+
+    {{- range .Data.Pages -}}
+        {{- if in .Params.categories "work" -}}
+            {{- $urldef := replace (index (split .Permalink  "/" ) 4) " " "" -}}
+            <div class="col-6 col-md-3 col-sm-4 text-center" style=" margin-bottom: 30px;">
+                <a href="{{ .Permalink }}">
+                    <img  class="thumb figure-img img-fluid  rounded-circle" src="imgPrj/{{ $urldef }}/thumb.jpg" /><br />
+                    <span style="font-size:0.8em">{{ .Title }}</span>
+                </a>
+            </div>
+        {{- else -}}
+            {{- partial "listado.html" . -}}
+        {{- end -}}
+    {{- end -}}
+</div>
+{{- partial "footer.html" . -}}

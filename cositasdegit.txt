@@ -1,0 +1,13 @@
+error: error setting certificate verify locations:
+  CAfile: /bin/curl-ca-bundle.crt
+  CApath: none
+
+https://stackoverflow.com/questions/3778042/github-error-cloning-my-private-repository
+
+git config --system http.sslcainfo "C:\Program Files\Git\mingw64\ssl\certs\ca-bundle.crt"
+
+git submodule add -b master git@github.com:GOBOGIT/gobogit.github.io.git public 
+
+copiar public a gobogit.github.io
+
+xcopy .\public .\gobogit.github.io /e /i /h

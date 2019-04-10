@@ -1,0 +1,9 @@
+{{ $urlok := ($.Scratch.Get  "url") }}
+{{ $lista := ($.Scratch.Get "b") }}
+
+<nav class="tags nav justify-content-center flex-column flex-sm-row text-center">
+    <a class="flex-sm-fill nav-link" href="{{ $urlok }}">todo</a>
+    {{ range uniq $lista }}
+        &nbsp;<a class="flex-sm-fill nav-link" href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>&nbsp;
+    {{ end }}
+</nav>  
