@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Work on GOBO</title>
-    <link>http://gobo.tv/categories/work/</link>
+    <link>./categories/work/</link>
     <description>Recent content in Work on GOBO</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <lastBuildDate>Sun, 31 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://gobo.tv/categories/work/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="./categories/work/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>REEL CGI 2015</title>
-      <link>http://gobo.tv/work/reelcgi2015/</link>
+      <link>./work/reelcgi2015/</link>
       <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/reelcgi2015/</guid>
+      <guid>./work/reelcgi2015/</guid>
       <description>Orden de trabajos, nombre y productora:
 00:02 Promo Seguridad / PRI
 00:13 Vodafone WMC 2015 / GameTV
@@ -34,10 +34,10 @@
     
     <item>
       <title>REEL VFX 2015</title>
-      <link>http://gobo.tv/work/reelvfx2015/</link>
+      <link>./work/reelvfx2015/</link>
       <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/reelvfx2015/</guid>
+      <guid>./work/reelvfx2015/</guid>
       <description>Orden de trabajos, nombre y productora:
 00:03 Es Madrid / La Huella FX
 00:15 Libertad / Oxes Multimedia
@@ -54,280 +54,280 @@
     
     <item>
       <title>Ayto. Madrid</title>
-      <link>http://gobo.tv/work/ayto.madrid/</link>
+      <link>./work/ayto.madrid/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/ayto.madrid/</guid>
+      <guid>./work/ayto.madrid/</guid>
       <description>Freelance 2D compositor, 3D trails en Houdini</description>
     </item>
     
     <item>
       <title>Betmaster</title>
-      <link>http://gobo.tv/work/betmaster/</link>
+      <link>./work/betmaster/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/betmaster/</guid>
+      <guid>./work/betmaster/</guid>
       <description>Dieño, modelado, animación render. Edición.</description>
     </item>
     
     <item>
       <title>Chevrolet Seleccion</title>
-      <link>http://gobo.tv/work/chevroletseleccion/</link>
+      <link>./work/chevroletseleccion/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/chevroletseleccion/</guid>
+      <guid>./work/chevroletseleccion/</guid>
       <description>Limpieza, tracking, integración, sustitución de red y etalonaje de los planos.</description>
     </item>
     
     <item>
       <title>Choco Krispies</title>
-      <link>http://gobo.tv/work/chocokrispies/</link>
+      <link>./work/chocokrispies/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/chocokrispies/</guid>
+      <guid>./work/chocokrispies/</guid>
       <description>Tracking, composición</description>
     </item>
     
     <item>
       <title>Cink</title>
-      <link>http://gobo.tv/work/cink/</link>
+      <link>./work/cink/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/cink/</guid>
+      <guid>./work/cink/</guid>
       <description>Motion-graphics para promo.</description>
     </item>
     
     <item>
       <title>Ciudades Patrimonio</title>
-      <link>http://gobo.tv/work/ciudadespatrimonio/</link>
+      <link>./work/ciudadespatrimonio/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/ciudadespatrimonio/</guid>
+      <guid>./work/ciudadespatrimonio/</guid>
       <description>Composición 2D.</description>
     </item>
     
     <item>
       <title>ECI XBOX</title>
-      <link>http://gobo.tv/work/ecixbox/</link>
+      <link>./work/ecixbox/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/ecixbox/</guid>
+      <guid>./work/ecixbox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>El Corte Inglés</title>
-      <link>http://gobo.tv/work/elcorteingles/</link>
+      <link>./work/elcorteingles/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/elcorteingles/</guid>
+      <guid>./work/elcorteingles/</guid>
       <description>Composición, roto, keying.</description>
     </item>
     
     <item>
       <title>Expo Zaragoza</title>
-      <link>http://gobo.tv/work/expozaragoza/</link>
+      <link>./work/expozaragoza/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/expozaragoza/</guid>
+      <guid>./work/expozaragoza/</guid>
       <description>Tracking 3D, limpieza de planos, integración.</description>
     </item>
     
     <item>
       <title>Game TV Promo</title>
-      <link>http://gobo.tv/work/gametvpromo/</link>
+      <link>./work/gametvpromo/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/gametvpromo/</guid>
+      <guid>./work/gametvpromo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gas Natural</title>
-      <link>http://gobo.tv/work/gasnatural/</link>
+      <link>./work/gasnatural/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/gasnatural/</guid>
+      <guid>./work/gasnatural/</guid>
       <description>Composición 2D.</description>
     </item>
     
     <item>
       <title>Juegos a Fondo</title>
-      <link>http://gobo.tv/work/juegosafondo/</link>
+      <link>./work/juegosafondo/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/juegosafondo/</guid>
+      <guid>./work/juegosafondo/</guid>
       <description>Animación 3D para promo.</description>
     </item>
     
     <item>
       <title>La Hora Fria</title>
-      <link>http://gobo.tv/work/lahorafria/</link>
+      <link>./work/lahorafria/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/lahorafria/</guid>
+      <guid>./work/lahorafria/</guid>
       <description>Integración de 3D /Fume del departamento 3D. keying, clean, efectos y correción de color.</description>
     </item>
     
     <item>
       <title>Leche Pascual</title>
-      <link>http://gobo.tv/work/lechepascual/</link>
+      <link>./work/lechepascual/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/lechepascual/</guid>
+      <guid>./work/lechepascual/</guid>
       <description>Integración de modelo 3D, keying, clean y correción de color.</description>
     </item>
     
     <item>
       <title>Locatel</title>
-      <link>http://gobo.tv/work/locatel/</link>
+      <link>./work/locatel/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/locatel/</guid>
+      <guid>./work/locatel/</guid>
       <description>Tracking, integración 2D sobre imagen.</description>
     </item>
     
     <item>
       <title>Mc Donalds</title>
-      <link>http://gobo.tv/work/mcdonalds/</link>
+      <link>./work/mcdonalds/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/mcdonalds/</guid>
+      <guid>./work/mcdonalds/</guid>
       <description>Animación, render y composición.</description>
     </item>
     
     <item>
       <title>PRI Seguridad</title>
-      <link>http://gobo.tv/work/priseguridad/</link>
+      <link>./work/priseguridad/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/priseguridad/</guid>
+      <guid>./work/priseguridad/</guid>
       <description>Animación 3D 4K.</description>
     </item>
     
     <item>
       <title>Predial</title>
-      <link>http://gobo.tv/work/predial/</link>
+      <link>./work/predial/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/predial/</guid>
+      <guid>./work/predial/</guid>
       <description>Integración / tracking sobre imagen.</description>
     </item>
     
     <item>
       <title>Quiropráctica</title>
-      <link>http://gobo.tv/work/quiropractica/</link>
+      <link>./work/quiropractica/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/quiropractica/</guid>
+      <guid>./work/quiropractica/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RCM Radio</title>
-      <link>http://gobo.tv/work/rcmradio/</link>
+      <link>./work/rcmradio/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/rcmradio/</guid>
+      <guid>./work/rcmradio/</guid>
       <description>Animación 3D para promo.</description>
     </item>
     
     <item>
       <title>Seguros Libertad</title>
-      <link>http://gobo.tv/work/seguroslibertad/</link>
+      <link>./work/seguroslibertad/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/seguroslibertad/</guid>
+      <guid>./work/seguroslibertad/</guid>
       <description>Track, limpieza e integración de nuevos logotipos.</description>
     </item>
     
     <item>
       <title>Tarjetas Optimismo</title>
-      <link>http://gobo.tv/work/tarjetasoptimismo/</link>
+      <link>./work/tarjetasoptimismo/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/tarjetasoptimismo/</guid>
+      <guid>./work/tarjetasoptimismo/</guid>
       <description>Tracking e integración sobre croma.</description>
     </item>
     
     <item>
       <title>Tekniset</title>
-      <link>http://gobo.tv/work/tekniset/</link>
+      <link>./work/tekniset/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/tekniset/</guid>
+      <guid>./work/tekniset/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tekniset Plaka</title>
-      <link>http://gobo.tv/work/teknisetplaka/</link>
+      <link>./work/teknisetplaka/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/teknisetplaka/</guid>
+      <guid>./work/teknisetplaka/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tron Legacy</title>
-      <link>http://gobo.tv/work/tronlegacy/</link>
+      <link>./work/tronlegacy/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/tronlegacy/</guid>
+      <guid>./work/tronlegacy/</guid>
       <description>Compositor Senior Nuke. Proyecto estereoscópico. 14 planos.</description>
     </item>
     
     <item>
       <title>Vodafone</title>
-      <link>http://gobo.tv/work/vodafone/</link>
+      <link>./work/vodafone/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/vodafone/</guid>
+      <guid>./work/vodafone/</guid>
       <description>Integración, tracking.</description>
     </item>
     
     <item>
       <title>Vodafone Automotive</title>
-      <link>http://gobo.tv/work/vodafoneautomotive/</link>
+      <link>./work/vodafoneautomotive/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/vodafoneautomotive/</guid>
+      <guid>./work/vodafoneautomotive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vodafone M2M</title>
-      <link>http://gobo.tv/work/vodafonem2m/</link>
+      <link>./work/vodafonem2m/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/vodafonem2m/</guid>
+      <guid>./work/vodafonem2m/</guid>
       <description>Animación 3D.</description>
     </item>
     
     <item>
       <title>Vodafone MWC 2014</title>
-      <link>http://gobo.tv/work/vodafonemwc2014/</link>
+      <link>./work/vodafonemwc2014/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/vodafonemwc2014/</guid>
+      <guid>./work/vodafonemwc2014/</guid>
       <description>Animación 3D.</description>
     </item>
     
     <item>
       <title>Vodafone Ready Business</title>
-      <link>http://gobo.tv/work/vodafonereadybusiness/</link>
+      <link>./work/vodafonereadybusiness/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/vodafonereadybusiness/</guid>
+      <guid>./work/vodafonereadybusiness/</guid>
       <description>3D, edición.</description>
     </item>
     
     <item>
       <title>Vodafone Tunel</title>
-      <link>http://gobo.tv/work/vodafonetunel/</link>
+      <link>./work/vodafonetunel/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gobo.tv/work/vodafonetunel/</guid>
+      <guid>./work/vodafonetunel/</guid>
       <description>Formato panorámico para proyección.</description>
     </item>
     
